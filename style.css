@@ -1,0 +1,138 @@
+/* Podstawowe style i resetowanie */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nowoczesna czcionka */
+    background-color: #1a1a1a; /* Ciemne tło jako baza */
+    /* --- Tło tematyczne --- */
+    /* Zastąp 'images/amd_background.jpg' ścieżką do Twojego obrazu */
+    background-image: url('images/amd_background.jpg'); 
+    background-size: cover; /* Pokryj całe tło */
+    background-position: center; /* Wyśrodkuj obraz */
+    background-attachment: fixed; /* Tło stoi w miejscu podczas przewijania */
+    background-repeat: no-repeat;
+    color: #e0e0e0; /* Jasny kolor tekstu dla kontrastu */
+    line-height: 1.6;
+}
+
+/* Kontener centrujący zawartość */
+.container {
+    max-width: 960px; /* Maksymalna szerokość treści */
+    margin: 40px auto; /* Centrowanie w poziomie, margines na górze/dole */
+    padding: 30px;
+    background-color: rgba(20, 20, 20, 0.85); /* Półprzezroczyste ciemne tło dla treści */
+    border-radius: 10px; /* Zaokrąglone rogi */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Cień dla głębi */
+}
+
+/* Nagłówek */
+header h1 {
+    color: #ff0000; /* Czerwony kolor charakterystyczny dla AMD */
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+header p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+/* Nawigacja na stronie głównej (Przyciski) */
+.main-nav {
+    text-align: center; /* Wyśrodkowanie przycisków */
+    margin-top: 40px;
+}
+
+.nav-button {
+    display: block; /* Przyciski jeden pod drugim */
+    width: 80%; /* Szerokość przycisku */
+    max-width: 350px; /* Maksymalna szerokość */
+    margin: 15px auto; /* Odstępy i centrowanie */
+    padding: 18px 30px; /* Wielkość przycisku (duży padding) */
+    background-color: #ff0000; /* Czerwony AMD */
+    color: white; /* Biały tekst */
+    text-decoration: none; /* Usuń podkreślenie linku */
+    font-size: 1.3em; /* Duża czcionka */
+    font-weight: bold;
+    border: none; /* Bez obramowania */
+    border-radius: 8px; /* Zaokrąglone rogi */
+    cursor: pointer; /* Kursor wskazujący */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Płynne przejścia */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtelny cień */
+}
+
+/* Efekt najechania myszą na przycisk */
+.nav-button:hover {
+    background-color: #cc0000; /* Ciemniejszy czerwony */
+    transform: translateY(-2px); /* Lekkie uniesienie przycisku */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Treść na podstronach */
+main {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Link powrotny na podstronach */
+.back-link {
+    display: inline-block; /* Traktuj jak element blokowy, ale w linii */
+    margin-top: 20px;
+    padding: 8px 15px;
+    color: #ff0000; /* Czerwony AMD */
+    text-decoration: none;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444; /* Linia oddzielająca */
+    font-size: 0.9em;
+    color: #aaa; /* Szarawy kolor tekstu w stopce */
+}
+
+body {
+    /* ... inne style ... */
+    background-color: #1a1a1a; /* Kolor tła, jeśli obrazek się nie załaduje */
+    /* --- Tło tematyczne --- */
+    background-image: url('images/amd_background.jpg'); /* ŚCIEŻKA DO TWOJEGO OBRAZU */
+    background-size: cover; /* Obrazek pokryje całe dostępne tło, może być przycięty */
+    background-position: center; /* Wyśrodkuje obrazek w tle */
+    background-attachment: fixed; /* Tło pozostaje nieruchome podczas przewijania strony */
+    background-repeat: no-repeat; /* Obrazek tła nie będzie się powtarzał */
+    /* ... inne style ... */
+}
+/* Styl dla kontenera linku "O stronie" */
+.top-right-nav {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* Styl samego linku "O stronie" */
+.top-right-nav a {
+    color: white;              /* Biały kolor tekstu */
+    text-decoration: underline; /* Podkreślenie tekstu */
+    font-size: 1em;           /* Aktualny rozmiar czcionki */
+    font-weight: normal;
+}
+
+/* Opcjonalnie: zmiana koloru po najechaniu myszką */
+.top-right-nav a:hover {
+    color: #ffdddd;
+}
